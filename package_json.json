@@ -1,7 +1,7 @@
 {
   "name": "toctou-demo",
   "version": "1.0.0",
-  "description": "Demo of a TOCTOU race condition for educational use",
+  "description": "Demo of a TOCTOU race condition for educational purposes",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
