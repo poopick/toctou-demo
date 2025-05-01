@@ -1,0 +1,12 @@
+{
+  "name": "toctou-demo",
+  "version": "1.0.0",
+  "description": "Demo of a TOCTOU race condition for educational use",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
