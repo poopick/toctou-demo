@@ -9,12 +9,12 @@ let retestStatus = {
 
 app.post('/confirm-retest', (req, res) => {
   if (!retestStatus.completed) {
-    // Simulate processing delay (e.g., DB write)
+    // Vulnerable timing window here
     setTimeout(() => {
       retestStatus.timesPaid += 1;
       retestStatus.completed = true;
       console.log("User paid! Total:", retestStatus.timesPaid);
-    }, 100);  // delay to expose the race
+    }, 100); // Simulated DB delay
     res.send("Retest confirmed.");
   } else {
     res.status(400).send("Already completed.");
